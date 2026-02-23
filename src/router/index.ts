@@ -1,6 +1,6 @@
 import {
   createRouter,
-  createWebHistory,
+  createWebHashHistory,
   type RouteRecordRaw,
 } from "vue-router";
 import { useAuthStore } from "@/stores/auth";
@@ -83,7 +83,7 @@ const routes: RouteRecordRaw[] = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes,
   scrollBehavior(_to, _from, savedPosition) {
     if (savedPosition) return savedPosition;
