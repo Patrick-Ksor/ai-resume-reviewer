@@ -1,0 +1,2 @@
+import{d as a,a as t,c as l,F as s,f as d,B as i,n as r}from"./index-Dgz2JEFO.js";const o={class:"flex flex-col gap-2"},f=a({__name:"BaseSkeleton",props:{width:{default:"100%"},height:{default:"1rem"},rounded:{default:"rounded-lg"},lines:{default:1}},setup(e){return(u,c)=>(t(),l("div",o,[(t(!0),l(s,null,d(e.lines,n=>(t(),l("div",{key:n,class:r(["skeleton",e.rounded]),style:i({width:n===e.lines&&e.lines>1?"65%":e.width,height:e.height})},null,6))),128))]))}});export{f as _};
+//# sourceMappingURL=BaseSkeleton.vue_vue_type_script_setup_true_lang-ycObIMPY.js.map
