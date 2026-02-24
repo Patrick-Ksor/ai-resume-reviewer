@@ -2,8 +2,8 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import { resolve } from "path";
 
-export default defineConfig({
-  base: "/ai-resume-reviewer/",
+export default defineConfig(({ mode }) => ({
+  base: mode === "production" ? "/ai-resume-reviewer/" : "/",
   plugins: [vue()],
   resolve: {
     alias: {
@@ -12,10 +12,5 @@ export default defineConfig({
   },
   server: {
     port: 5173,
-    open: true,
   },
-  build: {
-    target: "esnext",
-    sourcemap: true,
-  },
-});
+}));
